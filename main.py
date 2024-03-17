@@ -16,7 +16,7 @@ def main():
     seed_urls = ['https://ru.wikipedia.org/wiki/Чемпионат_Европы_по_футболу_2024']
     parser = CssSelectorParser()
     
-    sink = FileSink('./result.jsonl')
+    sink = FileSink('./real_results/result.jsonl')
     runner = Runner(parser, sink, logger, seed_urls)
     
     start = time.time()
